@@ -21,6 +21,11 @@ if(checkout) checkout.addEventListener('change', updateEstimate);
 // After form submit, open WhatsApp with booking details
 document.getElementById('booking-form').addEventListener('submit', function(e) {
   const name = document.querySelector('input[name="name"]')?.value || '';
-  const msg = `Hello! New booking for Comfort Resort: ${name} from ${checkin.value} to ${checkout.value}. ${estimate.innerText}`;
-  window.open(`https://wa.me/254751261087?text=${encodeURIComponent(msg)}`, '_blank');
+  const msg = `Hello! welcome to hope resort comfort,where quality is garatied. New booking for Comfort Resort: ${name} from ${checkin.value} to ${checkout.value}. ${estimate.outerText}`;
+  window.open(`https://wa.me/254715896260?text=${encodeURIComponent(msg)}`, '_blank');
 });
+
+document.getElementById('booking-form').addEventListener('submit', function(e) {
+  const name = document.querySelector('input[name="name"]')?.value || '';
+  const msg = `Hello! New booking for Comfort Resort: ${name} from ${checkin.value} to ${checkout.value}. ${estimate.innerText}`;
+  window.open(`https://smtp.me/kennedythepeacemaker@gmail.com?text=${encodeURIComponent(msg)}`, '_blank');
